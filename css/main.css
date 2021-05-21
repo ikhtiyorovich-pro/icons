@@ -2,8 +2,11 @@
 	box-sizing: border-box;
 }
 body {
+	font-family: Barlow, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 10px;
 	margin: 0;
 	padding: 0;
-}
-form {
 }

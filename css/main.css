@@ -1,19 +1,41 @@
-* {
+html {
+	height: 100%;
 	box-sizing: border-box;
+}
+
+*,
+*::before *::after {
+	box-sizing: inherit;
+	scroll-behavior: smooth;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 body {
 	height: 100%;
 	font-family: Barlow, sans-serif;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 10px;
+	font-size: 18px;
 	line-height: 5px;
 	flex-direction: column;
 	line-height: 1.5;
 	margin: 0;
 	padding: 0;
 }
-
+form {
+	width: 850px;
+	height: 185px;
+	margin: auto;
+}
 .form_check-label {
 	display: flex;
 }
@@ -23,18 +45,36 @@ body {
 	font-family: Barlow, sans-serif;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 15px;
+	font-size: 25px;
 	line-height: 10px;
 	display: flex;
-	padding-top: 5px;
+	padding-left: 10px;
+	padding-top: 7px;
 }
+
 .form_check-control {
 	display: inline-block;
 	width: 20px;
 	height: 20px;
-	border: 2px solid black;
+	border: 1.5px solid black;
 	border-radius: 5px;
 }
-input {
-	display: none;
+
+.form_check-input:checked + .form_check-control1 {
+	background-image: url(../images/table-tennis.png);
+	opacity: 0.4;
+}
+.form_check-input:checked + .form_check-control2 {
+	background-image: url(../images/basketball-ball.png);
+	opacity: 0.4;
+}
+
+.form_check-input:checked + .form_check-control3 {
+	background-image: url(../images/volleyball-ball.png);
+	opacity: 0.4;
+}
+
+.form_check-input:checked + .form_check-control4 {
+	background-image: url(../images/hockey-puck.png);
+	opacity: 0.4;
 }

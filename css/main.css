@@ -2,11 +2,39 @@
 	box-sizing: border-box;
 }
 body {
+	height: 100%;
+	font-family: Barlow, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	line-height: 5px;
+	flex-direction: column;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+}
+
+.form_check-label {
+	display: flex;
+}
+.form_check-text {
+	width: 150px;
+	height: 30px;
 	font-family: Barlow, sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 15px;
 	line-height: 10px;
-	margin: 0;
-	padding: 0;
+	display: flex;
+	padding-top: 5px;
+}
+.form_check-control {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 2px solid black;
+	border-radius: 5px;
+}
+input {
+	display: none;
 }

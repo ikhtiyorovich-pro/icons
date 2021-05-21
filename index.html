@@ -8,24 +8,40 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<form method="POST" action="#">
-			<h1>Qaysi sport turiga qiziqasiz?</h1>
+		<section class="section-checkbox">
+			<ul class="section-checkbox_item">
+				<form method="POST" action="#">
+					<h1 class="checkbox-name">Qaysi sport turiga qiziqasiz?</h1>
 
-			<label class="form_check-label"
-				><input type="checkbox" name="tennis" />Stol tennisi</label
-			>
+					<label class="form_check-label"
+						><input type="checkbox" name="tennis" value="table-tennis" />
 
-			<label class="form_check-label"
-				><input type="checkbox" name="basketball" />Basketbol</label
-			>
+						<span class="form_check-control"></span>
+						<span class="form_check-text">Stol tennisi</span>
+					</label>
 
-			<label class="form_check-label"
-				><input type="checkbox" name="volleyball" />Voleybol</label
-			>
+					<label class="form_check-label">
+						<input type="checkbox" name="basketball" value="basketball-game" />
 
-			<label class="form_check-label"
-				><input type="checkbox" name="hokkey" />Hokkey</label
-			>
-		</form>
+						<span class="form_check-control"></span>
+						<span class="form_check-text">Basketbol</span>
+					</label>
+
+					<label class="form_check-label"
+						><input type="checkbox" name="volleyball" value="volleyball-game" />
+
+						<span class="form_check-control"></span>
+						<span class="form_check-text">Voleybol</span>
+					</label>
+
+					<label class="form_check-label"
+						><input type="checkbox" name="hokkey" value="hokkey-game" />
+
+						<span class="form_check-control"></span>
+						<span class="form_check-text">Hokkey</span>
+					</label>
+				</form>
+			</ul>
+		</section>
 	</body>
 </html>
